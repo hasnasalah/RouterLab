@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { posts } from "../lib/posts";
-import "./post.css";
+import "../App.css";
 
 export default function PostDetailPage() {
   const { slug } = useParams<{ slug: string }>();

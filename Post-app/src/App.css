@@ -65,3 +65,13 @@
 .back-btn:hover {
   background-color: #444;
 }
+.navbar {
+  padding: 16px 32px;
+  background-color: #222;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* <-- space between all links */
+}

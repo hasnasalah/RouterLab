@@ -1,4 +1,5 @@
 import {posts} from "../lib/posts";
+import "../App.css";
 import {Link} from "react-router-dom";
 export default function BlogPage(){
 
@@ -10,7 +11,7 @@ return (
       {posts.map((post) => {
         return(
           <p className="post" key={post.id}>
-            <Link className="title" to={`/posts/${post.slug}`}/>
+            <Link className="title" to={`/post/${post.slug}`}> {post.title}</Link>
           </p>
         );
       })}

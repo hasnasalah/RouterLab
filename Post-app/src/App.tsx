@@ -15,10 +15,11 @@ function App() {
 <NavBar/>
     <Routes>
       <Route path="/" element={<BlogPage/>}/> 
-      <Route path="/posts" element={<BlogPage />} />
+      <Route path="/blog" element={<BlogPage/>} />
       <Route path="/admin" element={<ProtectedRoute > <AdminPage/></ProtectedRoute>}/> 
+      <Route path="/post/:slug" element={<PostDetailPage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
-      <Route path="/posts/:slug" element={<PostDetailPage/>}/>
+    
     </Routes>
     </>
   )
